@@ -1,22 +1,18 @@
 import Link from 'next/link';
-import styles from '../styles/Navbar.module.css';
 
-const Navbar = () => {
+export default function Navbar() {
   return (
-    <nav className={styles.navbar}>
-      <div className={styles.logo}>
-        <img src="/images/logo.png" alt="UrbanRent Logo" />
+    <nav className="navbar">
+      <Link href="/">Urban Rent</Link>
+      <div>
+        <Link href="/about">About</Link>
+        <Link href="/contact">Contact</Link>
+        <Link href="/properties">Properties</Link>
       </div>
-      <input type="text" className={styles.search} placeholder="Search home here" />
-      <ul className={styles.menu}>
-        <li><Link href="/properties">Properties</Link></li>
-        <li><Link href="/about">About</Link></li>
-        <li><Link href="/contact">Contact</Link></li>
-        <li><button className={styles.signIn}>Sign in</button></li>
-        <li><button className={styles.register}>Register</button></li>
-      </ul>
+      <div>
+        <button>Sign In</button>
+        <button>Register</button>
+      </div>
     </nav>
   );
-};
-
-export default Navbar;
+}
