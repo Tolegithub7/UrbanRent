@@ -8,7 +8,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Navbar />
-        <PropertyFilters />
         <main>{children}</main>
         <Footer />
       </body>
