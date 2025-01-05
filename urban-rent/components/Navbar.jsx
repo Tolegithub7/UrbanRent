@@ -8,7 +8,7 @@ export default function Navbar() {
     <div>
       <nav className="flex flex-row justify-between items-center px-6 py-4 shadow-md bg-white">
         {/* Logo */}
-        <div className="flex items-center">
+        <a href='/' className="flex items-center">
           <Image
             src="/images/logo.png"
             priority
@@ -18,7 +18,7 @@ export default function Navbar() {
             height={70}
             className="object-contain"
           />
-        </div>
+        </a>
 
         {/* Search Bar */}
         <div className="flex items-center bg-gray-100 rounded-full px-4 py-2 w-1/3 max-w-lg">
